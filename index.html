@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AES - szyfrowanie</title>
+	<link rel="stylesheet" type="text/css" href="./includes/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<main>
+
+  <div class="container">
+    <div class="desc desc-1">Encryption</div>
+    <div class="card card-1">
+      <div class="margin-top-40">Text to encrypt:</div>
+      <input id="en-text" onchange="encrypt_prep()"></input>
+      <div class="margin-top-40">Secret key:</div>
+      <input id="en-key" onchange="encrypt_prep()"></input>
+      <div class="margin-top-40">Generated hash:</div>
+      <div class="margin-bottom-40" id="en-res">-</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="desc desc-2">Decryption</div>
+    <div class="card card-2">
+      <div class="margin-top-40">Hash to decrypt:</div>
+      <input id="de-text" onchange="decrypt_prep()"></input>
+      <div class="margin-top-40">Secret key:</div>
+      <input id="de-key" onchange="decrypt_prep()"></input>
+      <div class="margin-top-40">Encrypted text:</div>
+      <div class="margin-bottom-40" id="de-res">-</div>
+    </div>
+  </div>
+
+  <script src="./includes/aes.js"></script>
+</html>

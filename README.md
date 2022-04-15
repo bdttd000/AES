@@ -1,7 +1,7 @@
 # AES
 AES encrytption and decryption
 
-Live code there: https://jakubwartak.pl/aes/
+Live code there: https://jakubwartak.pl/github/aes/
 
 AES code source: http://point-at-infinity.org/jsaes/jsaes.js
 
